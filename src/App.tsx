@@ -1,9 +1,10 @@
 import "./App.css";
+import Zustand from "./components/Zustand";
 
 function App() {
   return (
     <>
-      <div>Hello World</div>
+      <Zustand />
     </>
   );
 }
