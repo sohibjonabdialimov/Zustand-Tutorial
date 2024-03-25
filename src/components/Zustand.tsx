@@ -12,7 +12,6 @@ const Zustand = () => {
   useEffect(() => {
     getData.setData();
   }, []);
-  // console.log(getData.data);
   return (
     <>
       <h1>{count}</h1>

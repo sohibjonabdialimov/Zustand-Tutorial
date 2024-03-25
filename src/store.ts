@@ -1,8 +1,6 @@
-
 import axios from "axios";
 import { create } from "zustand";
 import { DataType } from "./types";
-
 
 type CountType = {
   count: number;
@@ -20,7 +18,6 @@ export const useCounter = create<CountType>((set) => ({
   setData: async () => {
     try {
       const res = await axios.get("https://fakestoreapi.com/products?limit=5");
-      
       set({ data: res.data });
     } catch (err) {
       console.error("Error in data fetch:", err);
